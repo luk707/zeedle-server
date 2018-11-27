@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const port = 8000;
+const port = process.env.PORT || 8000;
 const app = express();
 
 var allowCrossDomain = function(req, res, next) {
